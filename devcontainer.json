@@ -1,0 +1,15 @@
+{
+  "name": "Arch Linux GUI Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "forwardPorts": [ 6080 ],
+  "portsAttributes": {
+    "6080": {
+      "label": "Arch Linux Desktop (noVNC)",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "echo 'Arch Linux environment ready!'"
+}
